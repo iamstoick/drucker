@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# @author_name
+#   Gerald Z. Villorente
+#
+# @author_email
+#   geraldvillorente@gmail.com
+#
+# Drucker is a painless approach in building Drupal environment using Docker.
+# This script is experimental. Use it in your own risk.
+#
+# Set the flags.
+project_name=0
+
+# Get the value of the parameters.
+while getopts "n:" opt; do
+  case $opt in
+    n)
+      project_name=1
+      NAME="$OPTARG"
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+    :)
+      echo "Option -$OPTARG requires an argument." >&2
+      exit 1
+      ;;
+  esac
+done
+
+# Do all the business logic here.
+
+
+

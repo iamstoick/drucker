@@ -8,6 +8,9 @@
 # Drucker is a painless approach in building Drupal environment using Docker.
 # This script is experimental. Use it in your own risk.
 #
+# This script aims to handle the burden of setting up a development environment.
+#
+
 # Set the flags.
 project_name=0
 
